@@ -6,6 +6,8 @@ This module contains the constants used in AppRTC Python modules.
 """
 import os
 
+SERVER_IP = '115.29.55.106'
+
 ROOM_MEMCACHE_EXPIRATION_SEC = 60 * 60 * 24
 MEMCACHE_RETRY_LIMIT = 100
 
@@ -13,12 +15,12 @@ LOOPBACK_CLIENT_ID = 'LOOPBACK_CLIENT_ID'
 
 # TODO: Remove once clients support ICE_SERVER.
 #TURN_BASE_URL = 'https://computeengineondemand.appspot.com'
-TURN_BASE_URL = 'http://115.29.55.106:9000/turn'
+TURN_BASE_URL = 'http://'+ SERVER_IP + ':9000/turn'
 TURN_URL_TEMPLATE = '%s?username=%s&key=%s'
 CEOD_KEY = '4080218913'
 
 #ICE_SERVER_BASE_URL = 'https://networktraversal.googleapis.com'
-ICE_SERVER_BASE_URL = 'http://115.29.55.106/ice'
+ICE_SERVER_BASE_URL = 'http://'+ SERVER_IP + '/ice'
 #ICE_SERVER_URL_TEMPLATE = '%s/v1alpha/iceconfig?key=%s'
 ICE_SERVER_URL_TEMPLATE = '%s?username=%s&key=%s'
 ICE_SERVER_API_KEY = os.environ.get('ICE_SERVER_API_KEY')
@@ -29,12 +31,12 @@ WSS_INSTANCE_NAME_KEY = 'vm_name'
 WSS_INSTANCE_ZONE_KEY = 'zone'
 WSS_INSTANCES = [{
 #    WSS_INSTANCE_HOST_KEY: 'apprtc-ws.webrtc.org:443',
-    WSS_INSTANCE_HOST_KEY: '60.205.93.75:6067',
+    WSS_INSTANCE_HOST_KEY: SERVER_IP + ':6067',
     WSS_INSTANCE_NAME_KEY: 'wsserver-std',
     WSS_INSTANCE_ZONE_KEY: 'us-central1-a'
 }, {
 #    WSS_INSTANCE_HOST_KEY: 'apprtc-ws-2.webrtc.org:443',
-    WSS_INSTANCE_HOST_KEY: '60.205.93.75:6067',
+    WSS_INSTANCE_HOST_KEY: SERVER_IP + ':6067',
     WSS_INSTANCE_NAME_KEY: 'wsserver-std-2',
     WSS_INSTANCE_ZONE_KEY: 'us-central1-f'
 }]
