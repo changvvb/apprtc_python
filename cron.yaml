@@ -1,4 +1,0 @@
-cron:
-- description: collider probing job on 5 min interval
-  url: /probe/collider
-  schedule: every 5 minutes from 00:02 to 23:59
