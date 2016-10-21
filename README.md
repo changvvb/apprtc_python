@@ -2,7 +2,7 @@
 这里也是要翻墙的
 
 ### 1.配置google_appengine,然后配置环境变量(以下命令仅供参考)
-到https://cloud.google.com/sdk/docs/下载对应的sdk，解压，然后将解压后的文件夹中的bin目录路径配置到PATH环境变量中
+到https://cloud.google.com/sdk/docs/ 下载对应的sdk，解压，然后将解压后的文件夹中的bin目录路径配置到PATH环境变量中
 ```bash
 $ cd
 $ wget https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-sdk-131.0.0-linux-x86_64.tar.gz
