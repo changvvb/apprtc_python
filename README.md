@@ -16,8 +16,8 @@ $ git clone git@github.com:changvvb/apprtc_python.git
 $ cd apprtc_python
 ```
 ### 3.配置IP地址
-打开apprtc_startup.sh，修改IP地址
-打开source/constant.py修改IP地址
+#### 打开apprtc_startup.sh，修改IP地址
+#### 打开source/constant.py修改SERVER_IP变量
 
 ### 3.启动服务
 ```bash
