@@ -12,7 +12,7 @@ $ source ~/.bashrc
 ```
 ### 2.下载与部署
 ```bash
-$ git clone git@github.com:changvvb/apprtc_python.git
+$ git clone https://github.com/changvvb/apprtc_python.git
 $ cd apprtc_python
 ```
 ### 3.配置IP地址
