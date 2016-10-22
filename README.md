@@ -23,4 +23,4 @@ $ cd apprtc_python
 ```bash
 $ ./apprtc_startup.sh
 ```
-<a href="https://github.com/changvvb/IM">BACK</a> 
+<a href="https://github.com/changvvb/IM#2配置基于google-appengine的python服务">BACK</a> 
